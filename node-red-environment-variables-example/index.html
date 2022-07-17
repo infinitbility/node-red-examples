@@ -1,0 +1,25 @@
+<script type="text/html" data-template-name="node-env">
+</script>
+
+<script type="text/html" data-help-name="node-env">
+  <p>
+    A simple node that converts the message payloads into all node-env
+    characters
+  </p>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType("node-env", {
+    category: "Toolkit",
+    color: "#a6bbcf",
+    defaults: {
+      name: { value: "" },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "file.png",
+    label: function () {
+      return this.name || "node-env";
+    },
+  });
+</script>
